@@ -1,0 +1,21 @@
+{
+	"key.category.holoprint.main": "HoloPrint",
+	"key.holoprint.open_menu": "Open HoloPrint",
+	"key.holoprint.toggle_hologram": "Show / hide hologram",
+	"key.holoprint.move_forward": "Move build forward",
+	"key.holoprint.move_back": "Move build back",
+	"key.holoprint.move_left": "Move build left",
+	"key.holoprint.move_right": "Move build right",
+	"key.holoprint.move_up": "Move build up",
+	"key.holoprint.move_down": "Move build down",
+	"key.holoprint.rotate": "Rotate build",
+	"key.holoprint.mirror": "Mirror build",
+	"key.holoprint.layer_up": "Layer up",
+	"key.holoprint.layer_down": "Layer down",
+	"key.holoprint.layer_mode": "Cycle layer mode",
+	"key.holoprint.grab": "Grab build (hold, scroll = distance)",
+	"key.holoprint.pick_block": "Pick hologram block into hand",
+	"key.holoprint.after_view": "Show finished build",
+	"key.holoprint.corner_1": "Save area: corner 1",
+	"key.holoprint.corner_2": "Save area: corner 2"
+}

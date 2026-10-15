@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "holoprint",
+	"version": "${version}",
+	"name": "HoloPrint",
+	"description": "Holographic schematic blueprints with a built-in online schematic browser. Created by itzrealmacer.",
+	"authors": [
+		"itzrealmacer"
+	],
+	"license": "All-Rights-Reserved",
+	"icon": "assets/holoprint/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.holoprint.HoloPrintClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"mixins": [
+		"holoprint.mixins.json"
+	]
+}
