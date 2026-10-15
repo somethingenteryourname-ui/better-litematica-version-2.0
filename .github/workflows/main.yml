@@ -17,11 +17,21 @@ jobs:
         with:
           gradle-version: '9.7.1'
       - name: build
-        run: gradle build
+        run: |
+          settings=$(find . -name settings.gradle -not -path './.git/*' | head -n 1)
+          if [ -z "$settings" ]; then
+            echo "Couldn't find settings.gradle anywhere in the repo. These files were uploaded:"
+            find . -not -path './.git/*' -type f | head -n 100
+            exit 1
+          fi
+          dir=$(dirname "$settings")
+          echo "Building the project in: $dir"
+          cd "$dir"
+          gradle build
       - name: upload jar
         uses: actions/upload-artifact@v7
         with:
           name: HoloPrint-jar
           path: |
-            build/libs/*.jar
-            !build/libs/*-sources.jar
+            **/build/libs/*.jar
+            !**/build/libs/*-sources.jar
